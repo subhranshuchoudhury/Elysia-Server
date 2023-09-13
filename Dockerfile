@@ -1,5 +1,5 @@
 FROM oven/bun:1.0
-WORKDIR /app/app
+WORKDIR /app
 COPY package.json package.json
 COPY bun.lockb bun.lockb
 RUN bun install
