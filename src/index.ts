@@ -3,7 +3,7 @@ const superheroes = require("superheroes");
 
 const app = new Elysia();
 
-app.get("/", () => "Hello Elysia");
+app.get("/", () => "Hello Elysia!");
 app.get("/welcome", () => ({ message: "It is fast." }));
 app.get("/random", () => ({ name: superheroes.random() }));
 app.get("/all", () => ({ names: superheroes.all }));
